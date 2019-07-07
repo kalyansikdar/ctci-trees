@@ -4,6 +4,7 @@ Algorithm:
 2. Else, check LCA for its left and right children
 3. If both left node or right node returns a value, then root is the LCA
 4. If only left or right node returns a value, then left or right is LCA respectively
+Link: https://www.youtube.com/watch?v=13m9ZCB8gjw
 """
 
 # Definition for a binary tree node.
