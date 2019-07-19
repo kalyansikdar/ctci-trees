@@ -6,7 +6,12 @@ class TreeNode(object):
         self.left = None
         self.right = None
 """
-
+"""
+Algorithm:
+    1. Find the node
+    2. If the node does not have a right child, go up till the value is greater that the node
+    3. If the node has a right child, go to the right child. Then return the extreme left child of the right child. 
+"""
 
 class Solution:
     """
