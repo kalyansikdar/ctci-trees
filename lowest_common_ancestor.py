@@ -1,6 +1,6 @@
 """
 Algorithm:
-1. If the nodes are either equal to the root, then root is the LCA
+1. If either of the nodes are equal to the root, then root is the LCA
 2. Else, check LCA for its left and right children
 3. If both left node or right node returns a value, then root is the LCA
 4. If only left or right node returns a value, then left or right is LCA respectively
