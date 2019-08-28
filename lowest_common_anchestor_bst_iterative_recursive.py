@@ -28,3 +28,26 @@ class Solution(object):
                 root = root.right
             else:
                 return root
+            
+    def lowestCommonAncestor(self, root, p, q):
+        """
+        :type root: TreeNode
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: TreeNode
+        """
+        # This recursive solution is BST specific
+        """
+        Algorithm:
+        # both nodes are smaller than the root, go left
+        # both nodes are greater than the root, go right
+        # else root is LCA
+        """
+        
+        if root.val > p.val and root.val > q.val:        
+            return self.lowestCommonAncestor(root.left, p, q)
+        elif p.val > root.val and q.val > root.val:      
+            return self.lowestCommonAncestor(root.right, p, q)
+        else:
+            return root
+
