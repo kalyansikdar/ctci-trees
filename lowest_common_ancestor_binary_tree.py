@@ -1,5 +1,5 @@
 """
-Algorithm:
+Algorithm: (Can be applied to both BST and binary tree)
 1. If either of the nodes are equal to the root, then root is the LCA
 2. Else, check LCA for its left and right children
 3. If both left node or right node returns a value, then root is the LCA
@@ -38,3 +38,13 @@ class Solution(object):
             return nodeRight
         else:
             return nodeLeft
+        
+        # This is shorter and crisp
+        """
+        if nodeLeft and nodeRight:
+            return root
+        elif nodeLeft or nodeRight:
+            return nodeLeft or nodeRight
+        else:
+            return None
+        """
